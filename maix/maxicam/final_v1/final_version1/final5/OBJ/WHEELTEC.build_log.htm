@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 5, 2, LIC=UJWP0-BRQU7-WFKI7-EA2HC-FM835-N89TE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  F:\keilmdk540\ARM\ARMCompiler_506\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+F:\gc\freertos+gc\code\final5\USER\WHEELTEC.uvprojx
+Project File Date:  03/23/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'F:\keilmdk540\ARM\ARMCompiler_506\Bin'
+Build target 'FreeRTOS'
+compiling encoder.c...
+compiling main.c...
+compiling stm32f4xx_it.c...
+compiling motor.c...
+compiling timer.c...
+compiling MPU6050.c...
+compiling LED.C...
+compiling AutoRecharge.c...
+compiling ICM20948.c...
+compiling adc.c...
+compiling pstwo.c...
+..\HARDWARE\pstwo.c(133): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				res=0.5*res;
+..\HARDWARE\pstwo.c(164): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				res=0.5*res;
+..\HARDWARE\pstwo.c(114): warning:  #177-D: variable "received_data1"  was declared but never referenced
+  	uint8_t received_data1;
+..\HARDWARE\pstwo.c(188): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(result>0.25)result=0.25;
+..\HARDWARE\pstwo.c: 4 warnings, 0 errors
+compiling key.c...
+compiling can.c...
+compiling usartx.c...
+..\HARDWARE\usartx.c(55): warning:  #177-D: variable "received_data1"  was declared but never referenced
+  	uint16_t  received_data1=0;
+..\HARDWARE\usartx.c: 1 warning, 0 errors
+compiling oled.c...
+compiling I2C.c...
+compiling robot_select_init.c...
+compiling wit_c_sdk.c...
+..\HARDWARE\wit_c_sdk\wit_c_sdk.c(135): warning:  #177-D: variable "usCRC16"  was declared but never referenced
+      uint16_t usCRC16, usTemp, i, usData[4];
+..\HARDWARE\wit_c_sdk\wit_c_sdk.c(135): warning:  #177-D: variable "usTemp"  was declared but never referenced
+      uint16_t usCRC16, usTemp, i, usData[4];
+..\HARDWARE\wit_c_sdk\wit_c_sdk.c(135): warning:  #177-D: variable "i"  was declared but never referenced
+      uint16_t usCRC16, usTemp, i, usData[4];
+..\HARDWARE\wit_c_sdk\wit_c_sdk.c: 3 warnings, 0 errors
+compiling balance.c...
+..\BALANCE\balance.c(832): warning:  #177-D: variable "sum"  was declared but never referenced
+  	int32_t sum=0;
+..\BALANCE\balance.c(853): warning:  #177-D: variable "sum"  was declared but never referenced
+  	int32_t sum=0;
+..\BALANCE\balance.c(893): warning:  #940-D: missing return statement at end of non-void function "go_str_PLL" 
+  }
+..\BALANCE\balance.c(879): warning:  #177-D: variable "finish_flag"  was declared but never referenced
+  	static float angle_now, angle_rd_flag = 0 , finish_flag = 0;
+..\BALANCE\balance.c(245): warning:  #177-D: variable "FIFO_ENCODER"  was declared but never referenced
+  static float FIFO_ENCODER[4][11];
+..\BALANCE\balance.c: 5 warnings, 0 errors
+compiling system.c...
+compiling imu_task.c...
+..\BALANCE\imu_task.c(28): warning:  #177-D: variable "received_data"  was declared but never referenced
+  	uint16_t received_data;
+..\BALANCE\imu_task.c: 1 warning, 0 errors
+compiling show.c...
+compiling usb_hcd.c...
+compiling usb_core.c...
+compiling usbh_hid_core.c...
+compiling usbh_core.c...
+compiling usbh_ioreq.c...
+compiling usbh_hid_joy.c...
+compiling usb_bsp.c...
+compiling usbh_usr.c...
+linking...
+Program Size: Code=45980 RO-data=7872 RW-data=1036 ZI-data=27652  
+FromELF: creating hex file...
+"..\OBJ\WHEELTEC.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil::STM32F4xx_DFP@2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  F:/keilmdk540/pack/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>

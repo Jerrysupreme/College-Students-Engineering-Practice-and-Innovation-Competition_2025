@@ -1,0 +1,8 @@
+id: box
+name: box
+version: 1.0.0
+author: zr
+icon: ''
+desc: '0'
+files:
+  - main.py
